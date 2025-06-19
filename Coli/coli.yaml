@@ -1,0 +1,31 @@
+# Common
+cpu_num: 1
+seed: 1
+device: cuda:0
+log_dir: logs/coli/
+data_dir: data/
+
+# Training
+train:
+  lr: 0.001
+  max_epoch: 2000
+  val_interval: 100
+  lr_decay: 0.999
+  batch_size: 4
+
+# Model
+model:
+  K: 100
+  feature_dim: 64
+  use_rotation: True
+  num_heads: 8
+  num_layers: 2
+  pos_encoding_type: sine # learnable, sine
+  code_init: xavier # normal, uniform, xavier, kaiming, orthogonal, sparse, eye
+
+# coli
+coli:
+  mask_variable: TET
+  loci: 7
+  steps: 27
+  traj_num: 44

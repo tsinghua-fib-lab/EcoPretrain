@@ -1,0 +1,34 @@
+# Common
+cpu_num: 1
+seed: 1
+device: cuda:0
+log_dir: logs/
+data_dir: data/
+
+# Training
+train:
+  lr: 0.01
+  max_epoch: 50
+  lr_step: 1
+  lr_decay: 0.99
+  batch_size: 32
+
+# Model
+model:
+  feature_dim: 8
+  hidden_dim: 64
+  num_heads: 1
+  num_layers: 2
+  pos_encoding_type: sine # learnable, sine
+
+  K: 16
+  use_rotation: True
+  code_init: xavier # normal, uniform, xavier, kaiming, orthogonal, sparse, eye
+
+# system
+system:
+  num_traj: 1000
+  num_resources: 7
+  total_time: 100000
+  dt: 100
+  max_mutations: 100

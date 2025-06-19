@@ -1,0 +1,34 @@
+# Common
+cpu_num: 1
+seed: 1
+device: cuda:0
+log_dir: logs/parD3/
+data_dir: data/parD3/
+
+# Training
+train:
+  lr: 0.001
+  max_epoch: 200
+  val_interval: 20
+  lr_decay: 0.999
+  batch_size: 128
+
+# Model
+model:
+  K: 8000
+  feature_dim: 32
+  use_rotation: True
+  num_heads: 4
+  num_layers: 2
+  pos_encoding_type: sine # learnable, sine
+  code_init: xavier # normal, uniform, xavier, kaiming, orthogonal, sparse, eye
+
+# parD3
+parD3:
+  loci: 3
+  states: 20
+  population_size: 100
+  mutation_rate: 0.01
+  steps: 10
+  traj_num: 10000
+  lag: 1
