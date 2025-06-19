@@ -1,6 +1,6 @@
 # Multiscale structure-encoded pretraining
 
-A python implementation of our manuscript "Multiscale structure-encoded pretraining for modeling evolutionary microbial communities”. Thank you for reviewing our manuscript.
+A python implementation of our manuscript "*Multiscale structure-encoded pretraining for modeling evolutionary microbial communities*”.
 
 This work introduces a unified, self-supervised pretraining framework to model the complex dynamics of evolutionary microbial communities. Evolution unfolds across individual (species traits), community (species interactions), and generational (temporal sequences) scales, creating high-dimensional and stochastic processes that are challenging to analyze.
 
