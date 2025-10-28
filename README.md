@@ -50,13 +50,13 @@ This repository provides the source code for all experiments in the main text an
 
 ## Demo
 
-Taking the E. Coli experiment (Figure 6) as an example, the `Coli/data` folder contains the experimental data and evolutionary trajectories obtained from publicly available data. Readers can reproduce the model by running the interactive code files:
+Taking the E. Coli experiment (Figure 6) as an example, the `Coli/data` folder contains the experimental data and evolutionary trajectories obtained from publicly available data. Readers can reproduce the model by running the interactive code files: (this will take about 0.5 hours)
 
 - `coli_Encode.ipynb`: Perform multiscale encoding
 - `coli_Evolution.ipynb`: Perform evolutionary prediction
 - `coli_Fitness.ipynb`: Perform fitness prediction
 
-Each file contains the expected output and its visualization.
+Each file contains the expected output and its visualization. If you want to run on your personal data, please replace the file in the corresponding folder.
 
 
 
