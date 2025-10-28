@@ -1,6 +1,6 @@
-# Multiscale structure-encoded pretraining
+# Predicting evolutionary dynamics in microbial communities using deep learning
 
-A python implementation of our manuscript "*Multiscale structure-encoded pretraining for modeling evolutionary microbial communities*”.
+A python implementation of our manuscript "*Predicting evolutionary dynamics in microbial communities using deep learning*”.
 
 This work introduces a unified, self-supervised pretraining framework to model the complex dynamics of evolutionary microbial communities. Evolution unfolds across individual (species traits), community (species interactions), and generational (temporal sequences) scales, creating high-dimensional and stochastic processes that are challenging to analyze.
 
@@ -8,7 +8,7 @@ This work introduces a unified, self-supervised pretraining framework to model t
 
 This repository contains the source code for preprocessing data and reproducing experimental results. The source code is implemented in Python.
 
-<br/>
+
 
 ## Installation Guide
 
@@ -22,7 +22,10 @@ This repository contains the source code for preprocessing data and reproducing 
   pip install omegaconf tqdm scikit-learn torchdiffeq torch
   ```
 
-<br/>
+- The `requirements.txt` file contains the versions of all software packages
+- Hardware requirements: 32GB RAM, intel i5-14600KF CPU, 16GB GPU (Nvidia 4060Ti)
+
+
 
 ## Data
 
@@ -33,7 +36,7 @@ This repository contains the source code for preprocessing data and reproducing 
 - **MacArthur**: The `MacArthur/` folder provides the simulation scripts and data preprocessing code for the resource competition model, adapted from the framework developed by Tikhonov et al.
 - **Coli**: The `Coli/data` folder provides the original data, preprocessing scripts, and processed data for the real-world *E. coli* laboratory evolution system with multi-antibiotic resistance.
 
-<br/>
+
 
 ## Experiments
 
@@ -43,7 +46,19 @@ This repository provides the source code for all experiments in the main text an
 - `MacArthur/`: Contains the experimental scripts to reproduce **Figure 5** of the main text and **Supplementary Figure 1**.
 - `Coli/`: Contains the experimental scripts to reproduce **Figure 6** of the main text.
 
-<br/>
+
+
+## Demo
+
+Taking the E. Coli experiment (Figure 6) as an example, the `Coli/data` folder contains the experimental data and evolutionary trajectories obtained from publicly available data. Readers can reproduce the model by running the interactive code files:
+
+- `coli_Encode.ipynb`: Perform multiscale encoding
+- `coli_Evolution.ipynb`: Perform evolutionary prediction
+- `coli_Fitness.ipynb`: Perform fitness prediction
+
+Each file contains the expected output and its visualization.
+
+
 
 ## Acknowledgments
 
@@ -55,7 +70,7 @@ The real-world and simulated datasets used in this paper were collected and adap
 - [MacArthur](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.12.021038): Resource-competition model
 - [E. Coli](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001920): Multi-antibiotic resistance *E. coli* evolution experiment.
 
-<br/>
+
 
 ## License
 
